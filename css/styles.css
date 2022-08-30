@@ -164,7 +164,7 @@ img {
 }
 
 /* nav */
-.header {
+.portfolio-header {
   border-bottom: 1px solid #ececec;
 }
 .navigation {
@@ -182,6 +182,7 @@ img {
   margin-left: 50px;
 }
 .site-nav .link {
+  position: relative;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -227,6 +228,19 @@ img {
   fill: currentColor;
   margin-right: 10px;
 }
+.current::after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+
+  width: 100%;
+  height: 4px;
+
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
 /*hero*/
 .hero-title {
   color: var(--background-color);
@@ -314,6 +328,27 @@ img {
   text-align: center;
 
   margin-bottom: 50px;
+}
+.work-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  height: 70px;
+  width: 100%;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--background-color);
+  background: rgba(47, 48, 58, 0.8);
+}
+.work-thumb {
+  position: relative;
 }
 /* team */
 .team {
