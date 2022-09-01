@@ -157,7 +157,6 @@ img {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link.current {
   color: var(--accent-color);
@@ -186,7 +185,6 @@ img {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-icon {
   fill: currentColor;
@@ -224,7 +222,6 @@ img {
 .hero-button:hover,
 .hero-button:focus {
   background-color: #188ce8;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-title {
   color: var(--background-color);
@@ -402,10 +399,8 @@ img {
   background-color: var(--accent-color);
   color: var(--background-color);
   fill: currentColor;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 /* clients */
 .clients .list {
   display: flex;
@@ -434,8 +429,6 @@ img {
   border: 1px solid #2196f3;
   color: var(--accent-color);
   fill: currentColor;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* portfolio */
 .portfolio-button {
@@ -462,10 +455,6 @@ img {
 
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio {
   padding-top: 94px;
@@ -552,7 +541,6 @@ img {
 }
 .portfolio-link:hover .img-text {
   transform: translateY(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* footer */
@@ -594,8 +582,6 @@ img {
 .second-link:hover,
 .second-link:focus {
   color: var(--accent-color);
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .join-text {
   margin-bottom: 20px;
@@ -638,8 +624,6 @@ img {
 .join-link:hover,
 .join-link:focus {
   background-color: var(--accent-color);
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* modal-window */
 .backdrop {
@@ -664,21 +648,21 @@ img {
   justify-content: flex-end;
   top: 50%;
   left: 50%;
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   padding: 8px;
   min-width: 528px;
   min-height: 581px;
+
   background: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.1);
-  /* opacity: 0; */
 }
 
 .close-button {
@@ -687,6 +671,7 @@ img {
   border-radius: 50%;
   width: 30px;
   height: 30px;
+
   color: #000;
   background-color: var(--background-color);
   align-items: center;
